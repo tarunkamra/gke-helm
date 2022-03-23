@@ -9,14 +9,14 @@ on:
 
 # Environment variables available to all jobs and steps in this workflow
 env:
-  GKE_PROJECT: 
+  GKE_PROJECT: long-star-141310
   GKE_EMAIL: ${{ secrets.GKE_EMAIL }}
   GITHUB_SHA: ${{ github.sha }}
-  GKE_ZONE: us-east1-b
-  GKE_CLUSTER: randocats-cluster
-  IMAGE: randocats
+  GKE_ZONE: us-central1-c
+  GKE_CLUSTER: my-first-cluster-1
+  IMAGE: newimage
   REGISTRY_HOSTNAME: us.gcr.io
-  DEPLOYMENT_NAME: randocats
+  DEPLOYMENT_NAME: alabala
 
 jobs:
   setup-build-publish-deploy:
